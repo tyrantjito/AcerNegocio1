@@ -24,7 +24,7 @@
             <div class="col-lg-12 col-sm-12">
 
                 <div class="col-lg-4 col-sm-4">
-                    <asp:LinkButton ID="lnkAbreSolicitud" runat="server" ToolTip="Genera Solicitud" OnClick="lnkAbreSolicitud_Click" CssClass="btn btn-info t14" Visible="false"><i class="fa fa-save"></i>&nbsp;<span>Genera Solicitud</span></asp:LinkButton>
+                    <asp:LinkButton ID="lnkAbreSolicitud" runat="server" ToolTip="Genera Solicitud" OnClick="lnkAbreSolicitud_Click" CssClass="btn btn-info t14" Visible="true"><i class="fa fa-save"></i>&nbsp;<span>Genera Solicitud</span></asp:LinkButton>
                 </div>
                 <div class="col-lg-4 col-sm-4">
                     <asp:LinkButton ID="lnkAbreIntegrantes" runat="server" Visible="false" ToolTip="Agrega Integrantes" OnClick="lnkAbreIntegrantes_Click" CssClass="btn btn-grey t14"><i class="fa fa-save"></i>&nbsp;<span>Agrega Integrantes</span></asp:LinkButton>

@@ -65,7 +65,7 @@ public class SolicitudCredito
 
     public void agregaDatosGrupo()
     {
-        sql = "insert into an_solicitud_credito_encabezado values ("+empresa+","+sucursal+",(select isnull((select top 1 id_solicitud_credito from an_solicitud_credito_encabezado where id_empresa="+empresa+" and id_sucursal="+sucursal+" order by id_solicitud_credito desc),0)+1),"+numeroGrupo+",'" + fechasolicitud + "','" + fechaEntrega + "','" + grupoProductivo + "'," + numeroGrupo + "," + montoCredito + "," + plazo + "," + tasa + "," + garantiaLiquida + "," + montoMaximo + "," + montoAutorizado + "," + plazoRC + "," + tasaRC + ",'" +formaPago + "'," + ciclo + ",'"+observaciones+ "','" + amcs + "',"+id_banco+")";
+        sql = "insert into an_solicitud_credito_encabezado values ("+empresa+","+sucursal+",(select isnull((select top 1 id_solicitud_credito from an_solicitud_credito_encabezado where id_empresa="+empresa+" and id_sucursal="+sucursal+" order by id_solicitud_credito desc),0)+1),"+numeroGrupo+",'" + fechasolicitud + "','" + fechaEntrega + "','" + grupoProductivo + "'," + numeroGrupo + "," + montoCredito + "," + plazo + "," + tasa + "," + garantiaLiquida + "," + montoMaximo + "," + montoAutorizado + "," + plazoRC + "," + tasaRC + ",'" +formaPago + "'," + ciclo + ",'"+observaciones+ "','" + amcs + "',"+id_banco+","+canal+")";
         retorno = ejecuta.insertUpdateDelete(sql);
     }
     public void agregaDetalleGrupo()
