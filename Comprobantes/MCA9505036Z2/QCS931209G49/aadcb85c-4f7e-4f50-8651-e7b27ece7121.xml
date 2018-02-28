@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante version="3.2" folio="26713" fecha="2017-02-08T10:37:08" sello="waB5FffjGfKFzTFrdsI8yJTI2isPe1/pdt85ZOMVvKQebxYV6sKpOQ3ynZpJPeu+UGfCtFv9070zK6s2CY+yI7CLc2tJ9Nl33riv13hmBtu/INQHORNuPaNCxn7qWOugUIINKtlkZnKzlFerj+0hnX77hPuMaRT9XD+2nglhkhc=" formaDePago="PAGO EN UNA SOLA EXHIBICION" noCertificado="00001000000300518402" certificado="MIIEhDCCA2ygAwIBAgIUMDAwMDEwMDAwMDAzMDA1MTg0MDIwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xMzA3MTgyMDQ5MjRaFw0xNzA3MTgyMDQ5MjRaMIHQMSQwIgYDVQQDExtNT04gQ0FSIEFaVEFIVUFDQU4gU0EgREUgQ1YxJDAiBgNVBCkTG01PTiBDQVIgQVpUQUhVQUNBTiBTQSBERSBDVjEkMCIGA1UEChMbTU9OIENBUiBBWlRBSFVBQ0FOIFNBIERFIENWMSUwIwYDVQQtExxNQ0E5NTA1MDM2WjIgLyBNT1RDNDcxMDI2UDMxMR4wHAYDVQQFExUgLyBNT1RDNDcxMDI2SEhHTlJSMDQxFTATBgNVBAsTDE9SSUVOVEUgRC5GLjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwqWY/vTZToVbGx14Soj2v8K1AIrehmeOOudFs7bvcgOP1vIviD84Wx8L6HwlWieCmyVgOBOcrqpOu1Y2Ws+OtlChpRUXBStFDfWV09y16gySadb17i8bwx2RGNABxPWHn2aPwnGiXmZE02PdVr/wxWzPKPaUuKx0ez3PJfpqI80CAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAJuxcoJvKUKRECqAM1ZXQ0e/aaNza9tn5E+NjY7s7meTwPAkERLUs4TTBqBz0cOVuPqGdNjJ9xBheBBAU6j6rwqWq51uWqmhotXsXWD3DAQZbmeDrvwOIFccoa2mpY4opOccCQnD/WokUqhNLSZhRaDy4nuTRlV+5vySlftt6+ZgQPHA/0aA61TBu7OpNhLHus4FXW1f0N7TUh2RB9WhWQRaAOiBDwSgZD/dWUsc/yFt5y51GRtsQpVkiIpvAHJqqKk9Bvf9aDdofoIx/XPP/kl6e01o1Nm5zHEI1aORNXxxWl9Gw3Fh0AFby776hbjPINxm3XI0QdaAghCrC4/U2i4=" condicionesDePago="CONTADO" subTotal="6208.01" TipoCambio="1.00" Moneda="PESOS" total="7201.29" tipoDeComprobante="ingreso" metodoDePago="03" LugarExpedicion="HIDALGO No. Ext. LT. 171 No. Int. MZ. 3-B, Col. SANTA MARÍA AZTAHUACAN, C.P. 9570, IZTAPALAPA, CIUDAD DE MÉXICO, MEXICO" NumCtaPago="BBVA BANCOMER, CUENTA 1730" xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+  <cfdi:Emisor rfc="MCA9505036Z2" nombre="MONCAR AZTAHUACAN S.A. DE C.V.">
+    <cfdi:DomicilioFiscal calle="HIDALGO" noExterior="LT. 171" noInterior="MZ. 3-B" colonia="SANTA MARÍA AZTAHUACAN" localidad="CIUDAD DE MEXICO" municipio="IZTAPALAPA" estado="CIUDAD DE MÉXICO" pais="MEXICO" codigoPostal="09570" />
+    <cfdi:ExpedidoEn calle="HIDALGO" noExterior="LT. 171" noInterior="MZ. 3-B" colonia="SANTA MARÍA AZTAHUACAN" municipio="IZTAPALAPA" estado="CIUDAD DE MÉXICO" pais="MEXICO" codigoPostal="09570" />
+    <cfdi:RegimenFiscal Regimen="PERSONAS MORALES DEL REGIMEN GENERAL" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="QCS931209G49" nombre="QUALITAS COMPAÑIA DE SEGUROS, S.A. DE C.V.">
+    <cfdi:Domicilio calle="JOSÉ MARIA CASTORENA" noExterior="426" colonia="BANCO DE MÉXICO" localidad="CDMX" municipio="CUAUHTEMOC" estado="CIUDAD DE MÉXICO" pais="MEXICO" codigoPostal="06059" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-10" descripcion="Desmontar y colocar parrilla" valorUnitario="150.00" importe="150.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-11" descripcion="Desmontar y colocar salpicadera izquierda" valorUnitario="200.00" importe="200.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-13" descripcion="Reparar marco radiador" valorUnitario="300.00" importe="300.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-14" descripcion="Reparar tolva interior de salpicadera izquierda" valorUnitario="100.00" importe="100.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-15" descripcion="Reparar cofre" valorUnitario="300.00" importe="300.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-16" descripcion="Reparar bastidor delantero izq" valorUnitario="400.00" importe="400.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-17" descripcion="Pintar lo dañado" valorUnitario="1614.01" importe="1614.01" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-18" descripcion="Reconectar y checar sistema electrico" valorUnitario="100.00" importe="100.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-2" descripcion="Reparar *horquilla delantera izquierda" valorUnitario="500.00" importe="500.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-3" descripcion="Reparar puente delantero" valorUnitario="394.00" importe="394.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-4" descripcion="Alineación y balanceo" valorUnitario="200.00" importe="200.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-5" descripcion="Reparar rin delantero izquierdo" valorUnitario="300.00" importe="300.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-6" descripcion="Desmontar y colocar facia delantera" valorUnitario="200.00" importe="200.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-7" descripcion="Desmontar y colocar molduras de facia delantera" valorUnitario="100.00" importe="100.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="SERVICIO" noIdentificacion="MO-9" descripcion="Desmontar y colocar lodera delantera izquierda" valorUnitario="50.00" importe="50.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="REFACCIÓN" noIdentificacion="REF-3552" descripcion="Moldura central" valorUnitario="600.00" importe="600.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="REFACCIÓN" noIdentificacion="REF-3553" descripcion="Faro de niebla izquierdo" valorUnitario="350.00" importe="350.00" />
+    <cfdi:Concepto cantidad="1.00" unidad="REFACCIÓN" noIdentificacion="REF-3560" descripcion="Parrilla" valorUnitario="350.00" importe="350.00" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="993.28">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="24.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="32.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="48.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="16.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="48.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="64.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="258.24" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="16.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="80.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="63.04" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="32.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="48.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="32.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="16.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="8.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="96.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="56.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="56.00" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" version="1.0" UUID="aadcb85c-4f7e-4f50-8651-e7b27ece7121" FechaTimbrado="2017-02-08T10:36:55" selloCFD="waB5FffjGfKFzTFrdsI8yJTI2isPe1/pdt85ZOMVvKQebxYV6sKpOQ3ynZpJPeu+UGfCtFv9070zK6s2CY+yI7CLc2tJ9Nl33riv13hmBtu/INQHORNuPaNCxn7qWOugUIINKtlkZnKzlFerj+0hnX77hPuMaRT9XD+2nglhkhc=" noCertificadoSAT="00001000000301634628" selloSAT="HaJSkUTe9/pDNjYzUYBEbxWMRnFR7Jq8/RbMeNdz6Zvt+pu/c9vXzX8YuT5Po+DlVMF8To/MJzZV/8M/b1yR9weMM0KNxrCx0HhXnkTnm5ZxB10eD74PuZXudxORT7XxMOW3AvRVOCq9Dh/8gzQFBO2Hi9Z0aYyuCKtw/7z19R8=" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </cfdi:Complemento>
+  <cfdi:Addenda>
+    <ECFD version="1.0">
+      <Documento ID="T33CFDI26713">
+        <Encabezado>
+          <IdDoc>
+            <NroAprob>00000</NroAprob>
+            <AnoAprob>0000</AnoAprob>
+            <Tipo>33</Tipo>
+            <Serie>0</Serie>
+            <Folio>26713</Folio>
+            <Estado>ORIGINAL</Estado>
+            <NumeroInterno>01</NumeroInterno>
+            <FechaEmis>2017-02-08T10:37:08</FechaEmis>
+            <FormaPago>PAGO EN UNA SOLA EXHIBICION</FormaPago>
+            <Area>
+              <IdArea>001</IdArea>
+              <IdRevision>003</IdRevision>
+            </Area>
+          </IdDoc>
+          <ExEmisor>
+            <RFCEmisor>MCA9505036Z2</RFCEmisor>
+            <NmbEmisor>MONCAR AZTAHUACAN S.A. DE C.V.</NmbEmisor>
+            <CodigoExEmisor>
+              <TpoCdgIntEmisor>EXT</TpoCdgIntEmisor>
+              <CdgIntEmisor>19923</CdgIntEmisor>
+            </CodigoExEmisor>
+            <DomFiscal>
+              <Calle>HIDALGO</Calle>
+              <NroExterior>LT. 171</NroExterior>
+              <NroInterior>MZ. 3-B</NroInterior>
+              <Colonia>SANTA MARÍA AZTAHUACAN</Colonia>
+              <Municipio>IZTAPALAPA</Municipio>
+              <Estado>CIUDAD DE MÉXICO</Estado>
+              <Pais>MEXICO</Pais>
+              <CodigoPostal>09570</CodigoPostal>
+            </DomFiscal>
+            <LugarExped>
+              <Calle>HIDALGO</Calle>
+              <NroExterior>LT. 171</NroExterior>
+              <NroInterior>MZ. 3-B</NroInterior>
+              <Colonia>SANTA MARÍA AZTAHUACAN</Colonia>
+              <Municipio>IZTAPALAPA</Municipio>
+              <Estado>CIUDAD DE MÉXICO</Estado>
+              <Pais>MEXICO</Pais>
+              <CodigoPostal>09570</CodigoPostal>
+            </LugarExped>
+            <ContactoEmisor>
+              <Tipo>otro</Tipo>
+              <Nombre>Patricia Giselle Villareal</Nombre>
+              <eMail>giselle@moncar.com.mx</eMail>
+              <Telefono>56935996</Telefono>
+            </ContactoEmisor>
+          </ExEmisor>
+          <ExReceptor>
+            <RFCRecep>QCS931209G49</RFCRecep>
+            <NmbRecep>QUALITAS COMPAÑIA DE SEGUROS, S.A. DE C.V.</NmbRecep>
+            <CodigoExReceptor>
+              <TpoCdgIntRecep>INT</TpoCdgIntRecep>
+              <CdgIntRecep>BBOJ901017EHLERN9</CdgIntRecep>
+            </CodigoExReceptor>
+            <DomFiscalRcp>
+              <Calle>JOSÉ MARIA CASTORENA</Calle>
+              <NroExterior>426</NroExterior>
+              <Colonia>BANCO DE MÉXICO</Colonia>
+              <Municipio>CUAUHTEMOC</Municipio>
+              <Estado>CIUDAD DE MÉXICO</Estado>
+              <Pais>MEXICO</Pais>
+              <CodigoPostal>06059</CodigoPostal>
+            </DomFiscalRcp>
+            <LugarRecep>
+              <Calle>JOSÉ MARIA CASTORENA</Calle>
+              <NroExterior>426</NroExterior>
+              <Colonia>BANCO DE MÉXICO</Colonia>
+              <Municipio>CUAUHTEMOC</Municipio>
+              <Estado>CIUDAD DE MÉXICO</Estado>
+              <Pais>MEXICO</Pais>
+              <CodigoPostal>06059</CodigoPostal>
+            </LugarRecep>
+            <ContactoReceptor>
+              <Tipo>coordinador</Tipo>
+              <Nombre>Liliana Segura</Nombre>
+              <eMail>lsegura@qualitas.com.mx</eMail>
+              <Telefono>50025500</Telefono>
+            </ContactoReceptor>
+          </ExReceptor>
+          <Totales>
+            <Moneda>MXN</Moneda>
+            <SubTotal>6208.01</SubTotal>
+            <MntDcto>0.00</MntDcto>
+            <PctDcto>0.00</PctDcto>
+            <MntBase>6208.01</MntBase>
+            <MntImp>993.28</MntImp>
+            <VlrPagar>7201.29</VlrPagar>
+            <VlrPalabras>SIETE MIL DOSCIENTOS UNO PESOS 29/100 M.N.</VlrPalabras>
+          </Totales>
+          <ExImpuestos>
+            <TipoImp>IVA</TipoImp>
+            <TasaImp>16</TasaImp>
+            <MontoImp>993.28</MontoImp>
+          </ExImpuestos>
+          <Poliza>
+            <Tipo>autos</Tipo>
+            <Numero>0000000001</Numero>
+            <INC>0000</INC>
+            <TpoCliente>1</TpoCliente>
+            <NroReporte>00000416N/A</NroReporte>
+            <NroSint>04160416136</NroSint>
+          </Poliza>
+          <Vehiculo>
+            <Tipo>PARTICULAR</Tipo>
+            <Marca>RENAULT</Marca>
+            <Modelo>CLIO</Modelo>
+            <Ano>2005</Ano>
+            <Color>AZUL</Color>
+            <NroSerie>3BNBB2J60SL308807</NroSerie>
+            <Placa>122TRB</Placa>
+          </Vehiculo>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-10</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Desmontar y colocar parrilla</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>150.00</PrcNetoItem>
+          <MontoNetoItem>150.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>2</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-11</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Desmontar y colocar salpicadera izquierda</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>200.00</PrcNetoItem>
+          <MontoNetoItem>200.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>3</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-13</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Reparar marco radiador</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>300.00</PrcNetoItem>
+          <MontoNetoItem>300.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>4</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-14</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Reparar tolva interior de salpicadera izquierda</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>100.00</PrcNetoItem>
+          <MontoNetoItem>100.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>5</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-15</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Reparar cofre</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>300.00</PrcNetoItem>
+          <MontoNetoItem>300.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>6</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-16</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Reparar bastidor delantero izq</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>400.00</PrcNetoItem>
+          <MontoNetoItem>400.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>7</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-17</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Pintar lo dañado</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>1614.01</PrcNetoItem>
+          <MontoNetoItem>1614.01</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>8</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-18</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Reconectar y checar sistema electrico</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>100.00</PrcNetoItem>
+          <MontoNetoItem>100.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>9</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-2</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Reparar *horquilla delantera izquierda</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>500.00</PrcNetoItem>
+          <MontoNetoItem>500.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>10</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-3</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Reparar puente delantero</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>394.00</PrcNetoItem>
+          <MontoNetoItem>394.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>11</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-4</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Alineación y  balanceo</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>200.00</PrcNetoItem>
+          <MontoNetoItem>200.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>12</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-5</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Reparar rin delantero izquierdo</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>300.00</PrcNetoItem>
+          <MontoNetoItem>300.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>13</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-6</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Desmontar y colocar facia delantera</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>200.00</PrcNetoItem>
+          <MontoNetoItem>200.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>14</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-7</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Desmontar y colocar molduras de facia delantera</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>100.00</PrcNetoItem>
+          <MontoNetoItem>100.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>15</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>MO-9</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Desmontar y colocar lodera delantera izquierda</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>SERVICIO</UnmdItem>
+          <PrcNetoItem>50.00</PrcNetoItem>
+          <MontoNetoItem>50.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>16</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>REF-3552</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Moldura central</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>REFACCIÓN</UnmdItem>
+          <PrcNetoItem>600.00</PrcNetoItem>
+          <MontoNetoItem>600.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>17</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>REF-3553</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Faro de niebla izquierdo</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>REFACCIÓN</UnmdItem>
+          <PrcNetoItem>350.00</PrcNetoItem>
+          <MontoNetoItem>350.00</MontoNetoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>18</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT</TpoCodigo>
+            <VlrCodigo>REF-3560</VlrCodigo>
+          </CdgItem>
+          <DscLang>ES</DscLang>
+          <DscItem>Parrilla</DscItem>
+          <QtyItem>1.00</QtyItem>
+          <UnmdItem>REFACCIÓN</UnmdItem>
+          <PrcNetoItem>350.00</PrcNetoItem>
+          <MontoNetoItem>350.00</MontoNetoItem>
+        </Detalle>
+        <Referencia>
+          <NroLinRef>1</NroLinRef>
+          <TpoDocRef>FE</TpoDocRef>
+          <SerieRef>0</SerieRef>
+          <FolioRef>26713</FolioRef>
+          <RazonRef>Esta factura sustituye a esta factura</RazonRef>
+        </Referencia>
+        <TimeStamp>2017-02-08T10:37:08</TimeStamp>
+      </Documento>
+      <Personalizados>
+        <campoString name="montoManoObra">4908.01</campoString>
+        <campoString name="montoRefacciones">1300.00</campoString>
+        <campoString name="fechaFiniquito">2017-02-08T10:37:08</campoString>
+        <campoString name="fechaEntregaRefacciones">2017-02-08T10:37:08</campoString>
+        <campoString name="oficinaEntregaFactura">010</campoString>
+        <campoString name="UUID">aadcb85c-4f7e-4f50-8651-e7b27ece7121</campoString>
+        <campoString name="folioElectronico">17R902870414</campoString>
+        <campoString name="folioElectronico">000000000N/A</campoString>
+        <campoString name="montoDeducible">0.00</campoString>
+        <campoString name="bancoDepositoDeducible">X</campoString>
+        <campoString name="fechaDepositoDeducible">0000-00-00</campoString>
+        <campoString name="folioFicha_ReferenciaDeducible">
+        </campoString>
+        <campoString name="montoDemerito_Recupero">0.00</campoString>
+        <campoString name="bancoDepositoDemerito_Recupero">X</campoString>
+        <campoString name="fechaDepositoDemerito_Recupero">0000-00-00</campoString>
+        <campoString name="folioFicha_ReferenciaDemerito">
+        </campoString>
+        <campoString name="numeroTramite">0</campoString>
+        <campoString name="Default1">string</campoString>
+        <campoString name="Default2">string</campoString>
+      </Personalizados>
+    </ECFD>
+  </cfdi:Addenda>
+</cfdi:Comprobante>

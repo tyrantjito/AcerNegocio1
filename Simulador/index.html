@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Aser negocio juntos - simulador</title>
+    <meta name="author" content="Alfredo González Dávila | Formula Sistemas" />
+    <meta name="copyright" content="Formula Sistemas" />
+    <meta name="description" content="Simulador de montos" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- bootstrap datapicker -->
+    <!--<link href="css/datepicker3.css" rel="stylesheet">-->
+
+    <!-- Custom CSS -->
+    <!--<link href="css/sb-admin.css" rel="stylesheet">-->
+
+    <!-- Hojas de estilo MATERIAL DESIGN  -->
+    <link href="css/material.css" rel="stylesheet">
+    <!-- MATERIAL DESIGN basado en materialize -->
+
+    <link href="css/efectos.css" rel="stylesheet">
+    <link href="css/mediaquery.css" rel="stylesheet">
+    <link href="css/card.css" rel="stylesheet">
+    <link href="css/botones.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+
+    <!-- Hojas de estilo Animaciones  -->
+    <!--<link href="css/animate.css" rel="stylesheet">-->
+
+    <!-- MATERIAL DESIGN  fin de bloque -->
+    <!-- CSS  del proyecto -->
+    <link href="css/simulador.css" rel="stylesheet">
+
+    <!--CSS para mascaras en inputs-->
+
+    <link href="css/politespace.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts Para Material Desig -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- SECCION SCRIPTS -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!-- mascaras para inputs-->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/politespace.js"></script>
+    <script src="js/politespace-init.js"></script>
+    <!--    Biblioteca de funciones  -->
+    <script src="js/simulador.js"></script>
+    <script type="text/javascript" >
+        var x;
+        x=$(document);
+        x.ready(inicializa);
+
+    </script>
+
+</head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">Aser Negocio Juntos</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+                    <!--<nav class="mdl-navigation mdl-layout&#45;&#45;large-screen-only">
+                        <a class="mdl-navigation__link" href="">Link</a>
+                        <a class="mdl-navigation__link" href="">Link</a>
+                        <a class="mdl-navigation__link" href="">Link</a>
+                        <a class="mdl-navigation__link" href="">Link</a>
+                    </nav>-->
+                </div>
+            </header>
+            <!--<div class="mdl-layout__drawer">-->
+                <!--<div>-->
+                    <!--<img-->
+                            <!--src="img/logos/logomini1.png" alt="Logo Aser Negocio Juntos">-->
+                            <!--<span class="mdl-layout-title tituloMenuMovile Roboto-Bold">-->
+                                <!--Aser Negocios Juntos-->
+                            <!--</span>-->
+                <!--</div>-->
+                <!--<nav class="mdl-navigation">-->
+                    <!--<a class="mdl-navigation__link " href="index.html">Inicio <i class="fa fa-home"></i></a>-->
+                    <!--<a class="mdl-navigation__link " href="">Simulador de montos <i class="fa fa-line-chart"></i></a>-->
+
+                <!--</nav>-->
+            <!--</div>-->
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="img/backgrounds/background1-1024w.jpg"
+                                             srcset="img/backgrounds/background1-2048w.jpg 2048w,
+                                                img/backgrounds/background1-1680w.jpg 1680w,
+                                                img/backgrounds/background1-1280w.jpg 1280w,
+                                                img/backgrounds/background1-1024w.jpg 1024w,
+                                                img/backgrounds/background1-800w.jpg 800w,
+                                                img/backgrounds/background1-600w.jpg 600w,
+                                                img/backgrounds/background1-480w.jpg 480w,
+                                                img/backgrounds/background1-320w.jpg 320w">
+
+                                        <span class="card-title naranja1 sombraTexto tamanoLetra44px Ubuntu-Bold ">Simulador</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="row">
+                                            <div >
+                                                <form>
+                                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                                                        <div class="form-group">
+                                                            <label for="txtTasaMensual" class=" control-label">Tasa Mensual</label>
+                                                            <input type="number" class="form-control req" id="txtTasaMensual" placeholder="Porcentaje de tasa mensual"
+                                                                   min="1.00" max="99.99" onblur="validaTasaMensual()"  pattern="[0-9]*"
+                                                                   data-politespace data-politespace-grouplength="3" data-politespace-decimal-mark="." required>
+                                                        </div>
+
+
+                                                        <div class="form-group">
+                                                            <label for="txtTasaAnual" class=" control-label">Tasa Anual</label>
+                                                            <input type="number" class="form-control" id="txtTasaAnual" placeholder="Porcentaje de tasa Anual"
+                                                                   disabled="disabled" >
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="txtMontoPrestamo" class=" control-label">Monto del Préstamo</label>
+                                                            <input type="number" class="form-control" id="txtMontoPrestamo"
+                                                                   placeholder="Importe total del prestamo"
+                                                                   pattern="[0-9]*" data-politespace data-politespace-grouplength="3" data-politespace-delimiter=","
+                                                                   data-politespace-decimal-mark="." data-politespace-reverse value="1000.00"  required>
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="txtPlazo" class=" control-label">Plazo</label>
+                                                            <!--<input type="number" class="form-control" id="txtPlazo" placeholder="Plazoz 16, 20, 24">-->
+
+                                                            <select class="form-control" id="txtPlazo" placeholder="Plazos 16, 20, 24" >
+                                                                <option value="8">8 semanas</option>
+                                                                <option value="12">12 semanas</option>
+                                                                <option value="16">16 semanas</option>
+                                                                <option value="20">20 semanas</option>
+                                                                <option value="24">24 semanas</option>
+                                                                <option value="28">28 semanas</option>
+                                                                <option value="32">32 semanas</option>
+                                                                <option value="48">48 semanas</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <!--Boton para calculo-->
+                                                        <button id="btncalcular" class="btn btn-default z-depth-2 fondoGris3" onclick="calcular()" >
+                                                            Calcular
+                                                        </button>
+
+                                                        <!--<div class="btn btn-default" onclick="calcular()">-->
+                                                            <!--hola-->
+                                                        <!--</div>-->
+
+
+                                                    </div>
+
+                                                </form>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                                                    <div>
+                                                        <label class=" control-label rojo1 Ubuntu-Bold tamanoLetra34px">Datos Calculados</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="txtTasaSemanal" class=" control-label">Tasa Semanal</label>
+                                                        <input type="number" class="form-control" id="txtTasaSemanal" placeholder="Porcentaje correspondiente a la tasa semanal" disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="txtTasaPorDia" class=" control-label">Tasa por día</label>
+                                                        <input type="number" class="form-control" id="txtTasaPorDia" placeholder="Porcentaje de tasa por día" disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="txtCapital" class=" control-label">Capital</label>
+                                                        <input type="number" class="form-control" id="txtCapital" placeholder="Capital" disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="txtInteres" class=" control-label">Interes</label>
+                                                        <input type="number" class="form-control" id="txtInteres" placeholder="Interes" disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="txtCapitalmasInteres" class=" control-label">Capital + interes</label>
+                                                        <input type="number" class="form-control" id="txtCapitalmasInteres" placeholder="Importe del capital mas interes" disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="txtCapitalCuota" class=" control-label">Capital (cuota)</label>
+                                                        <input type="number" class="form-control" id="txtCapitalCuota" placeholder="Capital de la cuota" disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="txtCapitalCuota" class=" control-label">Interes (cuota)</label>
+                                                        <input type="number" class="form-control" id="txtInteresCuota" placeholder="Interes de la cuota" disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="txtCapitalmasInteresCuota" class=" control-label">Cuota  (K + I)</label>
+                                                        <input type="number" class="form-control" id="txtCapitalmasInteresCuota" placeholder="Suma del capital mas interes de la cuota" disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="txtCuotaRedondeada" class=" control-label">Cuota redondeada</label>
+                                                        <input type="text" class="form-control" id="txtCuotaRedondeada" placeholder="Cuota redondeada" disabled="disabled">
+                                                    </div>
+                                                </div>
+
+
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+            <!--menu anterior-->
+
+
+        <!-- SECCION SCRIPTS -->
+        <!-- Bootstrap datapicker -->
+        <!--<script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/locales/bootstrap-datepicker.es.js" type="text/javascript" charset="UTF-8"></script>-->
+
+        <!--<script src="js/material.js"></script>-->
+        <script src="js/material.js"></script>
+
+        <script src="js/materialize.js"></script>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RVCFDI</name>
+    </assembly>
+    <members>
+        <member name="T:RVCFDI.WSGeneraCFDI.Service">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicket(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketSC(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketSCAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketSCAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketCSF(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketCSFAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketCSFAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketAU(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketAUAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetTicketAUAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.CancelTicket(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.CancelTicketAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.CancelTicketAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.CancelTicketExt(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.CancelTicketExtAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.CancelTicketExtAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.PpoCfdTimbre_Cn(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.PpoCfdTimbre_CnAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.PpoCfdTimbre_CnAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetAcuse(System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetAcuseAsync(System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.GetAcuseAsync(System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.TestCfd(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.TestCfdAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.TestCfdAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.SchemaCfd(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.SchemaCfdAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.SchemaCfdAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.WSGeneraCFDI.Service.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.GetTicketCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.GetTicketSCCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.GetTicketCSFCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.GetTicketAUCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.CancelTicketCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.CancelTicketExtCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.PpoCfdTimbre_CnCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.GetAcuseCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.TestCfdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RVCFDI.WSGeneraCFDI.Service.SchemaCfdCompleted">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.AuthSoapHd">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.AuthSoapHd.strUserName">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.AuthSoapHd.strPassword">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.AuthSoapHd.AnyAttr">
+            <comentarios/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.StructAcuse">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructAcuse.state">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructAcuse.Descripcion">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructAcuse.Fecha">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructAcuse.Xml">
+            <comentarios/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.ClienteUsuarioTimbre">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.ClienteUsuarioTimbre.State">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.ClienteUsuarioTimbre.StateDescript">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.ClienteUsuarioTimbre.Estado">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.ClienteUsuarioTimbre.Descripcion">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.ClienteUsuarioTimbre.Cfdi">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.ClienteUsuarioTimbre.NoEncontrados">
+            <comentarios/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.StructCancel">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCancel.RfcSolicitante">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCancel.Fecha">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCancel.UUIDs">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCancel.NoSerieFirmante">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCancel.Descripcion">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCancel.state">
+            <comentarios/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.StructCfd">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.RfcEmisor">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.RfcReceptor">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.Version">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.Serie">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.Folio">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.FechaExpedicion">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.MontoOperacion">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.MontoImpuesto">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.TipoComprobante">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.Cadena">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.Firma">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.SerieCertificado">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.Cfdi">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.Timbre">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.Descripcion">
+            <comentarios/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.StructCfd.state">
+            <comentarios/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetTicketCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetTicketCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.GetTicketCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetTicketSCCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetTicketSCCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.GetTicketSCCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetTicketCSFCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetTicketCSFCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.GetTicketCSFCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetTicketAUCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetTicketAUCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.GetTicketAUCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.CancelTicketCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.CancelTicketCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.CancelTicketCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.CancelTicketExtCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.CancelTicketExtCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.CancelTicketExtCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.PpoCfdTimbre_CnCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.PpoCfdTimbre_CnCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.PpoCfdTimbre_CnCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetAcuseCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.GetAcuseCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.GetAcuseCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.TestCfdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.TestCfdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.TestCfdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.SchemaCfdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RVCFDI.WSGeneraCFDI.SchemaCfdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RVCFDI.WSGeneraCFDI.SchemaCfdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="M:RVCFDI.GeneraCFDI.agregarCertificadoBase64(System.String)">
+            <summary>
+            Agrega el nodo comprobante inicial necesario para el CFDI
+            </summary>
+            <param name="version"></param>
+            <param name="serie"></param>
+            <param name="folio"></param>
+            <param name="fecha"></param>
+            <param name="formaDePago"></param>
+            <param name="condicionesDePago"></param>
+            <param name="subTotal"></param>
+            <param name="descuento"></param>
+            <param name="motivoDescuento"></param>
+            <param name="tipoCambio"></param>
+            <param name="moneda"></param>
+            <param name="total"></param>
+            <param name="tipoDeComprobante"></param>
+            <param name="metodoDePago"></param>
+            <param name="lugarExpedicion"></param>
+            <param name="numCtaPago"></param>
+            <param name="folioFiscalOrig"></param>
+            <param name="serieFolioFiscalOrig"></param>
+            <param name="fechaFolioFiscalOrig"></param>
+            <param name="montoFolioFiscalOrig"></param>
+            <param name="certificadoBase64"></param>
+        </member>
+        <member name="T:RVCFDI.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:RVCFDI.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:RVCFDI.Properties.Resources.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:RVCFDI.Properties.Resources.cadenaoriginal_3_2">
+             <summary>
+               Busca una cadena traducida similar a &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+            &lt;!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by ﻿Javier Hernandez (Mi Casa) --&gt;
+            &lt;xsl:stylesheet version=&quot;2.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:fn=&quot;http://www.w3.org/2005/xpath-functions&quot; xmlns:cfdi=&quot;http://www.sat.gob.mx/cfd/3&quot; xmlns:ecc=&quot;http://www.sat.gob.mx/ecc&quot; xmlns:psgecfd=&quot;http://www.sat.gob.mx/psgecfd&quot; xmlns:donat=&quot;http://www.sat.gob.mx/donat&quot; xmlns:divisas=&quot;http://www.sat.gob.mx/d [resto de la cadena truncado]&quot;;.
+             </summary>
+        </member>
+        <member name="P:RVCFDI.Properties.Resources.nomina11">
+             <summary>
+               Busca una cadena traducida similar a &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+            &lt;xsl:stylesheet version=&quot;2.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:fn=&quot;http://www.w3.org/2005/xpath-functions&quot; xmlns:nomina=&quot;http://www.sat.gob.mx/nomina&quot;&gt;
+              &lt;xsl:output method=&quot;text&quot; version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; indent=&quot;no&quot;/&gt;
+            
+              &lt;!-- Manejador de nodos tipo nomina --&gt;
+              &lt;xsl:template match=&quot;nomina:Nomina&quot;&gt;
+            
+                &lt;!--Iniciamos el tratamiento de los atributos de Nómina --&gt;
+            
+                &lt;xsl:choose&gt;
+                  
+             [resto de la cadena truncado]&quot;;.
+             </summary>
+        </member>
+        <member name="T:RVCertificados.LlavePrivada">
+            <summary>
+            Clase para archivos de tipo llave privada.
+            </summary>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.#ctor">
+            <summary>
+            Inicializa la clase.
+            </summary>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.#ctor(System.String,System.String)">
+            <summary>
+            Inicializa la llave privada desde una ruta física.
+            </summary>
+            <param name="rutaLlave">Ruta física del archivo de llave privada.</param>
+            <param name="contrasenia">Contraseña de la llave privada.</param>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.Finalize">
+            <summary>
+            Desctructor de la clase.
+            </summary>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.cargarLlave(System.String,System.String)">
+            <summary>
+            Carga una llave privada desde un archivo físico.
+            </summary>
+            <param name="ruta_llave">Ruta física del archivo de la llave privada (Extensión .key).</param>
+            <param name="contrasenia_llave">Contraseña de la llave privada.</param>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.cargarLlave(System.Byte[],System.String)">
+            <summary>
+            Carga una llave privada desde un arreglo de bytes.
+            </summary>
+            <param name="keyblob">Arreglo de bytes del archivo de la llave privada (Extensión .key).</param>
+            <param name="contrasenia_llave">Contraseña de la llave privada.</param>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.cargarLlaveDeB64(System.String,System.String)">
+            <summary>
+            Carga una llave privada desde una cadena desde una cadena de certificado en formato base 64.
+            </summary>
+            <param name="llave_privada_b64">Cadena en formato base 64 del arreglo de bytes de la llave privada.</param>
+            <param name="contrasenia_llave">Contraseña de la llave privada.</param>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.sellarCadenaSha1(System.String)">
+            <summary>
+            Sella una cadena con codificación SHA1. Codificación utilizada en sello del emisor CFDI 3.2.
+            </summary>
+            <param name="cadena_original">Cadena original a sellar.</param>
+            <returns>Sello hash en cadena con formato base 64.</returns>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.sellarCadenaSha256(System.String)">
+            <summary>
+            Sella una cadena con codificación SHA256.
+            </summary>
+            <param name="cadena_original">Cadena original a sellar.</param>
+            <returns>Sello hash en cadena con formato base 64.</returns>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.sellarCadenaSha512(System.String)">
+            <summary>
+            Sella una cadena con codificación SHA512.
+            </summary>
+            <param name="cadena_original">Cadena original a sellar.</param>
+            <returns>Sello hash en cadena con formato base 64.</returns>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.exportarPem(System.String)">
+            <summary>
+            Exporta el certificado público con su llave privada a un archivo de en formato PEM (Privacy Enhanced Mail).
+            </summary>
+            <param name="ruta_archivo_pem">Ruta y nombre del archivo PEM que se generará. Si se omite la extensión se agregará ".pem".</param>
+        </member>
+        <member name="M:RVCertificados.LlavePrivada.exportarXml">
+            <summary>
+            Exporta la llave privada a su representación en formato XML.
+            </summary>
+            <returns>Cadena con formato XML.</returns>
+        </member>
+        <member name="P:RVCertificados.LlavePrivada.MensajeDeError">
+            <summary>
+            Mensaje de error general.
+            </summary>
+        </member>
+        <member name="P:RVCertificados.LlavePrivada.CodigoDeError">
+            <summary>
+            Mensaje de error general.
+            </summary>
+        </member>
+        <member name="P:RVCertificados.LlavePrivada.TipoCertificado">
+            <summary>
+            Tipo de llave privada.
+            </summary>
+        </member>
+        <member name="P:RVCertificados.LlavePrivada.Modulus">
+            <summary>
+            Valor original de la propiedad modulus para archivos de tipo certificado.
+            </summary>
+        </member>
+        <member name="P:RVCertificados.LlavePrivada.LlavePrivadaRSA">
+            <summary>
+            Objeto tipo RSA CryptoServiceProvider de la llave privada.
+            </summary>
+        </member>
+    </members>
+</doc>

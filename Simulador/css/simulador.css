@@ -1,0 +1,601 @@
+/* ************************************************************************************************
+ Definiendo tipos de letra
+************************************************************************************************ */
+/*Tipo de letra QuickSand*/
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../fonts/roboto/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url("../fonts/roboto/Roboto-Black.ttf");
+}
+/*
+@font-face {
+    font-family: BlackItalic;
+    src: url("../fonts/roboto/Roboto-BlackItalic.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url("../fonts/roboto/Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: Roboto-BoldItalic;
+    src: url("../fonts/roboto/Roboto-BoldItalic.ttf");
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url("../fonts/roboto/Roboto-Light.ttf");
+}
+*/
+/* ************************************************************************************************
+Fonts Ubuntu
+************************************************************************************************ */
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url("../fonts/ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+.tamanoLetraAlTripeCinco {
+    font-size: 3.5rem;
+}
+.tamanoLetraAlDoble {
+    font-size: 2rem;
+}
+
+.tamanoLetra34px {
+    font-size: 34px;
+}
+
+.tamanoLetra44px {
+    font-size: 44px;
+}
+/* ************************************************************************************************
+ Definiendo colores primer plano
+************************************************************************************************ */
+.azul1 {
+    color: #2a3354;
+}
+.azul2 {
+    color: #016891;
+}
+.azul3 {
+    color: #0091a4;
+}
+.azul4 {
+    color: #5e6484;
+}
+.azul5 {
+    color: #8086a6;
+}
+
+.gris1 {
+    color: #383838;
+}
+.gris2 {
+    color: #484242;
+}
+.gris3 {
+    color: #6f6b6a;
+}
+.rojo1 {
+    color: #8d0205;
+}
+.naranja1 {
+    color: #fba248;
+}
+.verde1 {
+    color: #02a85e;
+}
+.crema1 {
+    color: #d3d29c;
+}
+.blanco {
+    color: #ffffff;
+}
+.negro {
+    color: #000000;
+}
+/* ************************************************************************************************
+ Definiendo paleta de colores para fondos
+************************************************************************************************ */
+.fondoAzul1 {
+    background-color: #2a3354;
+}
+.fondoAzul2 {
+    background-color: #016891;
+}
+.fondoAzul3 {
+    background-color: #0091a4;
+}
+.fondoAzul4 {
+    background-color: #5e6484;
+}
+.fondoAzul5 {
+    background-color: #8086a6;
+}
+
+.fondoGris1 {
+    background-color: #383838;
+}
+.fondoGris2 {
+    background-color: #484242;
+}
+.fondoGris3 {
+    background-color: #6f6b6a;
+}
+.fondoRojo1 {
+    background-color: #8d0205;
+}
+.fondoNaranja1 {
+    background-color: #fba248;
+}
+.fondoVerde1 {
+    background-color: #02a85e;
+}
+.fondoCrema1 {
+    background-color: #d3d29c;
+}
+.fondoBlanco {
+    background-color: #ffffff;
+}
+.fondoNegro {
+    background-color: #000000;
+}
+
+/* ************************************************************************************************
+ Estilo global para BODY
+************************************************************************************************ */
+/* ************************************************************************************************
+ Definiendo imagen de fondo para el home
+************************************************************************************************ */
+
+
+
+/*body{
+    margin: 0px;
+    font-family: roboto, Ubuntu, tahoma, arial ;
+    font-size: 1rem;
+    /!*line-height: 1.2rem;*!/
+    line-height: normal;
+}*/
+
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: none;
+    font-family: Ubuntu-Regular, tahoma, arial, Roboto-Bold ;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+.application_name {
+    color: #d7f89e;
+}
+.application_description{
+    color: #ffffff;
+}
+.name_client {
+    color: #1e4db1;
+}
+.side-nav {
+    top: 105px;
+    background-color: #f4f4f4;
+}
+#logoCabezera {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto;
+    height: 60px;
+}
+
+.noBorde {
+    border: 0px;
+}
+/* *********************************************************************************************
+   Bloque de reglas generales
+   ********************************************************************************************* */
+
+#contenidoPrincipal{
+    margin-top: 25px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+.demo-card-wide.mdl-card {
+    width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+.demo-layout-transparent {
+
+}
+.backgroundParaIndex{
+    /*background: url('../img/tema/fondoDeEncabezadoPrincipal2048w.jpg') center / cover;*/
+    background: url(../img/backgrounds/background2-2048w.jpg) no-repeat center center fixed;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+}
+.mdl-layout-title{
+    color: white;
+}
+.mdl-layout__drawer{
+
+    background: rgba(80,70,68,1);
+    background: -moz-linear-gradient(top, rgba(80,70,68,1) 5%, rgba(80,70,68,1) 34%, rgba(140,131,129,1) 80%, rgba(166,158,155,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(5%, rgba(80,70,68,1)), color-stop(34%, rgba(80,70,68,1)), color-stop(80%, rgba(140,131,129,1)), color-stop(100%, rgba(166,158,155,1)));
+    background: -webkit-linear-gradient(top, rgba(80,70,68,1) 5%, rgba(80,70,68,1) 34%, rgba(140,131,129,1) 80%, rgba(166,158,155,1) 100%);
+    background: -o-linear-gradient(top, rgba(80,70,68,1) 5%, rgba(80,70,68,1) 34%, rgba(140,131,129,1) 80%, rgba(166,158,155,1) 100%);
+    background: -ms-linear-gradient(top, rgba(80,70,68,1) 5%, rgba(80,70,68,1) 34%, rgba(140,131,129,1) 80%, rgba(166,158,155,1) 100%);
+    background: linear-gradient(to bottom, rgba(80,70,68,1) 5%, rgba(80,70,68,1) 34%, rgba(140,131,129,1) 80%, rgba(166,158,155,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#504644', endColorstr='#a69e9b', GradientType=0 );
+
+    /* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+    /*Fondo de gradiente: rojo|negro1*/
+    /*background: radial-gradient(circle at 35.87% 14.57%, #870000, transparent 100%),*/
+                /*radial-gradient(circle at 31.84% 85.58%, #190A05, transparent 100%),*/
+                /*radial-gradient(circle at 10.69% 39.76%, rgba(255,255,255,0.5), transparent 55%),*/
+                /*radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%) ;*/
+
+    /*/!*Fondo de gradiente: Kyoto*!/*/
+    /*background: radial-gradient(circle at 14.57% 19.27%, #c21500, transparent 100%),*/
+    /*radial-gradient(circle at 46.49% 33.38%, #000000, transparent 57%),radial-gradient(circle at 36.53% 70.56%, #ffc500, transparent 100%),*/
+    /*radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);*/
+
+    /*/!*Fondo en gradiente: influenza*!/*/
+    /*background: radial-gradient(circle at 63.62% 83.46%, #C04848, transparent 100%),*/
+        /*radial-gradient(circle at 31.63% 20.79%, #480048, transparent 100%),*/
+        /*radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);*/
+
+}
+/*colores para los link (Material Desig)*/
+
+a.mdl-navigation__link{
+    text-decoration: none;
+
+}
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    /*background-color: rgb(224,224,224);*/
+    color: white;;
+}
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    /*background-color: rgb(224,224,224);*/
+    color: #484242;
+    font-size: 105%;
+}
+
+.mdl-layout__header{
+    background-color: #484242;
+}
+#miFotoMini1{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
+#logoMini{
+    margin: 5px;
+    width: 90px;
+    height: 40px;
+}
+.sombraTexto {
+    text-shadow: 0 8px 9px #848585, 0px -2px 1px #ffffff;
+}
+.tituloMenuMovile{
+    padding: 5px 10px;
+}
+
+
+#encabezadoPrincipal {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/*Letreros baged aceptados*/
+.mdl-chipVerde1 {
+    background-color: #02a85e;
+}
+/*Letreros baged rechasados*/
+.mdl-chipRojo1 {
+    background-color: #8d0205;
+}
+.btn:hover, .btn-large:hover {
+    background-color: #fcfcf7;
+}
+.fondoBotones1{
+    background-color: #97b56b;
+}
+.fondoBotones2{
+    background-color: #758c52;
+}
+.fondoBotones3{
+    background-color: #1d92e5;
+}
+
+.input-field>input[type=text]{
+    border-top: none;
+    border-right: none;
+    border-bottom: solid 1px ;
+    border-bottom-color: #484242;
+    border-bottom-width: thin;
+    border-left: none;
+}
+
+/* *********************************************************************************************
+   Bloque de reglas BOTONES
+   ********************************************************************************************* */
+
+.btn-floating:hover {
+    background-color: #b4b0af;
+}
+.posicion-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.posicion-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 5px;
+    /*border-width: 1px 0 0;*/
+    max-height: 340px;
+}
+
+/* ********************************************************************************************* */
+/* ************************************************************************************************
+ Definiendo nueva clase navbar-asernegocio
+************************************************************************************************ */
+.navbar-asernegocio {
+    background-color: #d7f89e;
+    border-color: #080808;
+}
+.navbar-asernegocio .navbar-brand {
+    color: #777;
+}
+.navbar-asernegocio .navbar-brand:hover,
+.navbar-asernegocio .navbar-brand:focus {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-asernegocio .navbar-text {
+    color: #777;
+}
+.navbar-asernegocio .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-asernegocio .navbar-nav > li > a:hover,
+.navbar-asernegocio .navbar-nav > li > a:focus {
+    color: #a8bc7b;
+    background-color: transparent;
+}
+.navbar-asernegocio .navbar-nav > .active > a,
+.navbar-asernegocio .navbar-nav > .active > a:hover,
+.navbar-asernegocio .navbar-nav > .active > a:focus {
+    color: #6f6b6a;
+    background-color: #f4f4f4;
+}
+.navbar-asernegocio .navbar-nav > .disabled > a,
+.navbar-asernegocio .navbar-nav > .disabled > a:hover,
+.navbar-asernegocio .navbar-nav > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+}
+.navbar-asernegocio .navbar-toggle {
+    border-color: #333;
+}
+.navbar-asernegocio .navbar-toggle:hover,
+.navbar-asernegocio .navbar-toggle:focus {
+    background-color: #333;
+}
+.navbar-asernegocio .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-asernegocio .navbar-collapse,
+.navbar-asernegocio .navbar-form {
+    border-color: #101010;
+}
+.navbar-asernegocio .navbar-nav > .open > a,
+.navbar-asernegocio .navbar-nav > .open > a:hover,
+.navbar-asernegocio .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #080808;
+}
+@media (max-width: 767px) {
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > .dropdown-header {
+        border-color: #080808;
+    }
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu .divider {
+        background-color: #080808;
+    }
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+        background-color: transparent;
+    }
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #080808;
+    }
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-asernegocio .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #444;
+        background-color: transparent;
+    }
+}
+.navbar-asernegocio .navbar-link {
+    color: #777;
+}
+.navbar-asernegocio .navbar-link:hover {
+    color: #fff;
+}
+.navbar-asernegocio .btn-link {
+    color: #777;
+}
+.navbar-asernegocio .btn-link:hover,
+.navbar-asernegocio .btn-link:focus {
+    color: #fff;
+}
+.navbar-asernegocio .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-asernegocio .btn-link:hover,
+.navbar-asernegocio .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-asernegocio .btn-link:focus {
+    color: #444;
+}
+/* ********************************************************************************************* */
+.fondoPrincipal {
+    /*background: url(../imagenes/svg/fondo1.svg) no-repeat center center fixed;*/
+    background: url(../img/backgrounds/background4-2048w.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* ********************************************************************************************* */
+/* Side Navigation */
+/* ********************************************************************************************* */
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 72px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+
+        /*background-color: #f4f4f4;*/
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #f4f4f4 !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+.side-nav>li>ul>li>a:hover {
+    color: #383838;
+}
+/* ********************************************************************************************* */
+.botonCerrar{}
+
+
+/* ********************************************************************************************* */
+.page-footer {
+    padding-top: 20px;
+    background-color: #ee6e73;
+}
+
+.page-footer .footer-copyright {
+    overflow: hidden;
+    min-height: 50px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.08);
+
+
+}
+.full {
+    /*background: url(../imagenes/svg/fondo1.svg) no-repeat center center fixed;*/
+    background: url(../img/tema/fondoDeEncabezadoPrincipal2048w.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* ********************************************************************************************* */
+/* Bloque de media query */
+/* ********************************************************************************************* */
+/*solo para lata resolucion*/
+@media only screen and (min-width: 2048px) {
+    .full {
+        /*background: url(../imagenes/svg/fondo1.svg) no-repeat center center fixed;*/
+        background: url(../img/tema/fondoDeEncabezadoPrincipal2048w.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+/*Resoluciones 1680 en adelante*/
+@media only screen and (max-width: 1680px) {
+
+}
+/*Resoluciones 1280 en adelante*/
+@media only screen and (max-width: 1280px) {
+
+}
+/*Resoluciones 1024 en adelante*/
+@media only screen and (max-width: 1024px) {
+     body{
+         margin-top: 0px ;
+     }
+}
+/*Resoluciones 800 en adelante*/
+@media only screen and (max-width: 800px) {
+
+}
+
+/*Resoluciones 600 en adelante*/
+@media only screen and (min-width: 600px) {
+
+}
+/*Resoluciones 480 en adelante*/
+@media only screen and (min-width: 480px) {
+
+}
+/*Resoluciones 320 en adelante*/
+@media only screen and (min-width: 320px) {
+
+}

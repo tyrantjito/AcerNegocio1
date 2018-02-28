@@ -1,0 +1,208 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdmonOrden.master.cs" Inherits="AdmonOrden" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Administración Orden</title>
+    <link href="css/cloud-admin.css" rel="stylesheet" type="text/css" />
+    <link href="css/menus.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css"  href="css/responsive.css" />	
+	<link href="css/4.4.0/css/font-awesome.min.css" rel="stylesheet"/> 
+	<link rel="stylesheet" type="text/css"  href="css/generales.css" />
+    <link href="css/dashboard.css" rel="stylesheet" type="text/css" />
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>     
+    <!--<script src="js/base.js" type="text/javascript"></script> 
+    <script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>-->
+   
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+         <div class="encabezado">        
+            <table class="ancho100 colorBlanco alineado alto100">
+                <tr>
+                    <td class="marginLeft textoIzquierda">
+                        <asp:Label ID="lbltitulo" runat="server" Text="MoncarWeb" CssClass="margin-left-50 titulo negritas colorMoncarAzul alineado margenLeft" Visible="false" />&nbsp;
+                        <asp:Label ID="lblEmpresa" runat="server" CssClass="colorMoncarAzul alineado" Visible="false" ></asp:Label>
+                        <asp:Image ID="imgEmpresa" runat="server" CssClass="img-responsive imagenLogo" ImageUrl="~/img/logo_aser.png" height="60" width="80"/>                      
+                    </td>                    
+                    <td class="textoBold text-center ancho75">
+                        <asp:Label ID="lblTallerSesion" runat="server" CssClass="colorMorado" Visible="false"></asp:Label>
+                        <asp:DropDownList ID="ddlTallerCambio" AutoPostBack="true" OnSelectedIndexChanged="ddlTallerCambio_SelectedIndexChanged" runat="server" DataSourceID="SqlDataSource15" DataTextField="nombre_taller" DataValueField="id_taller"></asp:DropDownList>
+                        <asp:SqlDataSource runat="server" ID="SqlDataSource15" ConnectionString='<%$ ConnectionStrings:Taller %>' SelectCommand="select distinct t.id_taller,t.nombre_taller
+                            from talleres t
+                            inner join usuarios_taller ut on ut.id_taller=t.id_taller
+                            where id_usuario=@id_usuario">
+                            <SelectParameters>
+                                <asp:QueryStringParameter QueryStringField="u" Name="id_usuario"></asp:QueryStringParameter>
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+                        <br />
+                        <asp:Label ID="lblUser" runat="server" CssClass="colorNegro"></asp:Label>
+                    </td> 
+                    <td class="textoBold colorBlanco text-center ancho5">
+                        <asp:Label ID="lblFechaActual" runat="server" Visible="false"></asp:Label>
+                        <asp:LinkButton runat="server" ID="not" CssClass="colorNegro t18 link" data-toggle="dropdown" href="#" aria-expanded="true">
+                            <span class="badge pull-right">
+                                <asp:Label ID="lblNotifi" runat="server"></asp:Label></span>
+                            <i class="fa fa-bell"></i><i class="fa fa-caret-down"></i> 
+                        </asp:LinkButton>                                                               
+                        <ul class="dropdown-menu dropdown-alerts alertas font-11">
+                                <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource40"  CssClass="ancho250px" >
+                                <ItemTemplate>
+                                    <li>
+                                        <asp:LinkButton ID="lnkNotificacion" runat="server" CommandArgument='<%# Eval("id_notificacion") %>' onclick="lnkNotificacion_Click">                                                    
+                                                <i class='<%# Eval("clase") %>'></i>
+                                                <asp:Label ID="lblNotifi" runat="server" Text='<%# Eval("notificacion") %>'></asp:Label>                                                   
+                                        </asp:LinkButton>
+                                    </li>
+                                    <li class="divider"></li> 
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource40" runat="server" ConnectionString="<%$ ConnectionStrings:Taller %>" SelectCommand="select top 15 n.id_notificacion,convert(char(10),n.hora,108) as hora,n.notificacion,n.clasificacion,n.estatus,
+case n.clasificacion when 1 then 'fa fa-sign-in' when 2 then 'fa fa-list-alt' when 3 then 'fa fa-cogs' when 4 then 'fa fa-check-circle' when 5 then 'fa fa-check-square' when 6 then 'fa fa-info-circle'  when 7 then 'fa fa-sign-out' when 8 then 'fa fa-list-alt' else '' end clase,
+n.usuario,u.nombre_usuario
+from Notificaciones n 
+left join usuarios u on u.id_usuario=n.usuario
+where n.fecha=@fecha and n.id_empresa=@idEmpresa and n.id_taller=@idTaller and n.estatus='P' order by n.hora desc ">
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="lblFechaActual" Name="fecha" PropertyName="Text" />
+                                    <asp:QueryStringParameter Name="idEmpresa" QueryStringField="e" />
+                                    <asp:QueryStringParameter Name="idTaller" QueryStringField="t" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>                                  
+                            <li>
+                                <asp:LinkButton ID="lnkTodas" runat="server" CssClass="text-center" onclick="lnkTodas_Click">Mostrar todas las notificaciones<i class="fa fa-angle-right"></i></asp:LinkButton>                                        
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="textoBold colorMorado textoDerecha ancho20">
+                        <asp:LinkButton ID="lnkCerrarSesion" runat="server" CssClass="t14 alingMiddle link colorNegro" OnClick="lnkCerrarSesion_Click"><i class="fa fa-sign-out"></i>Cerrar Sesi&oacute;n </asp:LinkButton>  
+                    </td>                   
+                </tr>
+            </table>
+        </div>
+        <section id="page">
+            
+			    <div class="container">
+				    <div class="row">
+					    <div id="content" class="col-lg-12">
+						    <!-- PAGE HEADER-->                            
+						    <div class="row">
+							    <div class="col-sm-12">
+                                    <div class="page-header">		                                		                                
+		                                <div class="clearfix">
+			                                <h3 class="content-title pull-left"><asp:Label ID="lblOrdenSelect" runat="server" ></asp:Label></h3>                                              
+		                                </div>
+                                    </div>
+                                    <div class="subnavbar">
+                                        <div class="subnavbar-inner">
+                                            <div class="container">
+                                                <ul class="mainnav">
+                                                    <li><asp:LinkButton ID="lnkHome" runat="server" ><i class="fa fa-tachometer"></i><span>Generales</span></asp:LinkButton></li>                                                                                                    
+                                                    <li class="dropdown" id="mrecep" runat="server"><a href="javascript:;" class="dropdown-toggle colorBlanco" data-toggle="dropdown"> <i class="fa fa-sign-in"></i><span>Originaci&oacute;n</span> <b class="caret"></b></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li id="subRecep" runat="server"><asp:LinkButton ID="lnkRecepcion" runat="server" onclick="lnkRecepcion_Click" >Solicitud Crédito</asp:LinkButton></li>
+                                                            <li id="subInv" runat="server"><asp:LinkButton ID="lnkInventario" runat="server" onclick="lnkInventario_Click" >Depósito Garantía y Seguro</asp:LinkButton></li>
+                                                            
+                                                        </ul> 
+                                                    </li>  
+                                                    <li class="dropdown" id="Li1" runat="server"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-credit-card"></i><span>Crédito</span> <b class="caret"></b></a>                                                  
+                                                     <ul class="dropdown-menu">
+                                                            <li id="lnkanalista" runat="server"><asp:LinkButton ID="lnkPagare" OnClick="lnkAnalista_Click" runat="server" >Asignar Analista</asp:LinkButton></li>
+                                                            <li id="lnkpagaregrup" runat="server"><asp:LinkButton ID="lnkPoliticas" OnClick="lnkPoliticas_Click" runat="server" >Revisión de Políticas</asp:LinkButton></li>
+                                                            
+                                                        </ul> 
+                                                        </li>
+                                                     <li class="dropdown" id="Li2" runat="server"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><span>Operación Interna</span> <b class="caret"></b></a>                                                  
+                                                     <ul class="dropdown-menu">
+                                                         <li id="Li6" runat="server"><asp:LinkButton ID="LinkButton4" OnClick="lnkValidaciones2_Click" runat="server" >Validaciónes</asp:LinkButton></li>
+                                                            <li id="Li7" runat="server"><asp:LinkButton ID="LinkButton5" OnClick="lnkValidaciónTelefonica_Click" runat="server" >Validación Telefónica</asp:LinkButton></li>
+                                                        </ul> 
+                                                    </li>   
+                                                   
+                                                    <li class="dropdown" id="Li14" runat="server"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i  class="fa fa-money" aria-hidden="true""></i><span>Tesorería</span> <b class="caret"></b></a>                                                  
+                                                    <ul class="dropdown-menu">
+                                                        <li id="Li5" runat="server"><asp:LinkButton ID="LinkButton3" OnClick="lnkFondeo_Click" runat="server" >Fondeo</asp:LinkButton></li>
+                                                        <li id="Li4" runat="server"><asp:LinkButton ID="lnkODP" OnClick="lnkODP_Click"  runat="server" >Generación de ODP</asp:LinkButton></li>
+                                                        
+                                                    </ul>
+                                                       </li>
+                                                     <li class="dropdown" id="Li3" runat="server"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i  class="fa fa-money" aria-hidden="true""></i><span>Legal</span> <b class="caret"></b></a>                                                  
+                                                    <ul class="dropdown-menu">
+                                                        
+                                                        <li id="Li19" runat="server"><asp:LinkButton ID="LinkButton2" OnClick="lnkPagare_Click" runat="server" >Pagaré</asp:LinkButton></li>
+                                                            <li id="Li20" runat="server"><asp:LinkButton ID="LinkButton15" OnClick="lnkPagareGrupal_Click" runat="server" >Pagaré Grupal</asp:LinkButton></li>
+                                                            <li id="Li21" runat="server"><asp:LinkButton ID="LinkButton16" OnClick="lnkContrato_Click" runat="server"  >Contrato</asp:LinkButton></li>
+                                                            <li id="Li22" runat="server"><asp:LinkButton ID="LinkButton17" OnClick="lnkcontrolpagosemanal_Click" runat="server" >Control Pagos y Ahorro Semanal</asp:LinkButton></li>
+                                                            
+                                                            <li id="Li26" runat="server"><asp:LinkButton ID="LinkButton20" OnClick="lnkControlAportacionesSolidarias_Click" runat="server"  >Control Aportaciones Solidarias</asp:LinkButton></li>
+                                                            <li id="Li9" runat="server"><asp:LinkButton ID="LinkButton7" OnClick="lnkInsPago_Click" runat="server" >Carta de Instrucción de Pago</asp:LinkButton></li>
+                                                        
+                                                       
+                                                    </ul>
+                                                       </li>
+                                                    <li class="dropdown" id="Li15" runat="server"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-balance-scale"></i><span>Cobranza</span> <b class="caret"></b></a>                                                  
+                                                         <ul class="dropdown-menu">
+                                                        <li id="Li10" runat="server"><asp:LinkButton ID="LinkButton1" OnClick="lnkcontrolPagos_Click" runat="server" >Control de Pagos</asp:LinkButton></li>
+                                                        <li id="Li17" runat="server"><asp:LinkButton ID="LinkButton13" OnClick="lnkestadoCuentaInd_Click" runat="server" >Estado de Cuenta Ind</asp:LinkButton></li>
+                                                        <li id="Li18" runat="server"><asp:LinkButton ID="EdoCuenGrup" OnClick="EdoCuenGrup_Click"  runat="server" >Estado de Cuenta Grupal</asp:LinkButton></li>                                                    
+                                                        <li id="Li8" runat="server"><asp:LinkButton ID="lnkAvisoCob" OnClick="lnkAvisoCob_Click" runat="server"  >Avisos de Cobranza</asp:LinkButton></li>
+                                                    </ul>
+                                                       </li>
+                                                     <li class="dropdown" id="Li23" runat="server"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-calculator"></i><span>Contabilidad</span> <b class="caret"></b></a>                                                  
+                                                         <ul class="dropdown-menu">
+                                                        <li id="Li24" runat="server"><asp:LinkButton ID="LinkButton19" OnClick="lnkPagare_Click" runat="server" >Registro Contable</asp:LinkButton></li>
+                                                     
+                                                    </ul>
+                                                       </li>                                             
+                                                    
+                                                    <li class="border-right">
+                                                        <asp:LinkButton ID="lnkOrdenes" runat="server" onclick="lnkOrdenes_Click"><i class="fa fa-home"></i><span>Home</span></asp:LinkButton>
+                                                    </li>                                                    
+                                                </ul>
+                                                <!-- /subnavbar -->
+
+                                            </div>
+                                            <!-- /container --> 
+                                        </div>
+                                        <!-- /subnavbar-inner --> 
+                                    </div> 				    
+							    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12">                                        
+                                        <div class="contenidos">
+                                            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </div>	
+                                    </div>
+                                </div>
+                            <div class="page-header text-center">
+		                        <!-- BREADCRUMBS -->
+		                        <ul class="breadcrumb">
+			                        <li>
+                                        <i class="fa fa-copyright t10 colorNegro"></i>&nbsp;<asp:Label ID="lblCopyRight" runat="server" CssClass="t10 alingMiddle colorNegro link" Text="Formula Sistemas "></asp:Label><br />
+                                        <asp:Label ID="lblversion" runat="server" CssClass="t10 alingMiddle colorNegro"></asp:Label>
+			                        </li>
+		                        </ul>		                                
+	                        </div>
+						    </div>
+						    <!-- /PAGE HEADER -->
+					    </div>
+				    </div>
+        </section>
+    </form>
+</body>
+</html>

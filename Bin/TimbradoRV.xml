@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TimbradoRV</name>
+    </assembly>
+    <members>
+        <member name="T:TimbradoRV.Timbrar">
+            <summary>
+            Es la clase principal de servicios de timbrado.
+            </summary>
+        </member>
+        <member name="M:TimbradoRV.Timbrar.#ctor">
+            <summary>
+            Constructor de la clase Timbrar.
+            </summary>
+        </member>
+        <member name="M:TimbradoRV.Timbrar.ConsumirServicio">
+            <summary>
+            Ejecuta el servicio seleccionado en la propiedad "Tipo".
+            </summary>
+        </member>
+        <member name="M:TimbradoRV.Timbrar.verificarErroresEnDatos">
+            <summary>
+            Verifica si las variables necesarias para iniciar los servicios están disponibles. Si regresa un True es probable que al ejecutar los servicios generen un error.
+            </summary>
+            <returns>Regresa un valor True si hay errores y una lista de las variables faltantes en la propiedad "DatosIncompletos". False si todo esta bien</returns>
+        </member>
+        <member name="M:TimbradoRV.Timbrar.SignFoliosPfx(System.String,System.String,System.String,System.String)">
+            <summary>
+            Función para sellar folios cancelados.
+            </summary>
+            <param name="satFolios">XML en formato String</param>
+            <param name="pathPfx"></param>
+            <param name="passwordPfx"></param>
+            <param name="nodeToSign"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimbradoRV.Timbrar.Dispose">
+            <summary>
+            Libera los recursos en memoria ocupados por la clase.
+            </summary>
+        </member>
+        <member name="M:TimbradoRV.Timbrar.Dispose(System.Boolean)">
+            <summary>
+            Libera los recursos ocupados por la clase.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.EstructuraCFDI">
+            <summary>
+            Estructura de un CFDI importada del web service.
+            </summary>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.MensajeDeError">
+            <summary>
+            Muestra el último mensaje de error al realizar alguno de los servicios.
+            </summary>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.MensajeDeAdvertencia">
+            <summary>
+            Muestra la advertencia de que algun proceso tuvo problemas.
+            </summary>
+            <remarks>Esto no afecta al timbrado.</remarks>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.DatosIncompletos">
+            <summary>
+            Despliega una lista de las variables faltantes para realizar los servicios.
+            </summary>
+            <remarks>Si estas variables no tienen valores podría causar un error al iniciar los servicios.</remarks>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.Status">
+            <summary>
+            Muestra o establece el estado actual de los servicios.
+            </summary>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.Tipo">
+            <summary>
+            Tipo de servicio que desea realizar.
+            </summary>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.URL">
+            <summary>
+            Esta es la URL del servicio web de Timbrado.
+            </summary>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.CFDorigen">
+            <summary>
+            Indica la dirección del CFD de origen.
+            </summary>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.CFDdestino">
+            <summary>
+            Indica la dirección donde se guardará el CFD después de timbrar.
+            </summary>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.Usuario">
+            <summary>
+            Nombre de usuario en formato string.
+            </summary>
+        </member>
+        <member name="P:TimbradoRV.Timbrar.Contrasena">
+            <summary>
+            Contraseña de usuario en formato string.
+            </summary>
+        </member>
+        <member name="T:TimbradoRV.Timbrar.tipos">
+            <summary>
+            Tipos de servicios a realizar.
+            </summary>
+        </member>
+        <member name="F:TimbradoRV.Timbrar.tipos.Timbrar_CFDI">
+            <summary>
+            Timbra un CFD en formato .XML.
+            </summary>
+        </member>
+        <member name="T:TimbradoRV.Timbrar.estado">
+            <summary>
+            Tipos de estados disponibles para los servicios. Por defecto se selecciona "Incompleto".
+            </summary>
+        </member>
+        <member name="F:TimbradoRV.Timbrar.estado.Terminado">
+             <summary>
+            Cuando ha terminado satisfactoriamente algún proceso realizado.
+             </summary>
+        </member>
+        <member name="F:TimbradoRV.Timbrar.estado.Error">
+            <summary>
+            Si ocurrio un error durante algún proceso.
+            </summary>
+        </member>
+        <member name="F:TimbradoRV.Timbrar.estado.Procesando">
+            <summary>
+            Cuando aún no termina alguno de los procesos.
+            </summary>
+        </member>
+        <member name="T:TimbradoRV.Service.Service">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.SchemaCfd(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.SchemaCfdAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.SchemaCfdAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.TestCfd(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.TestCfdAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.TestCfdAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.GetTicket(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.GetTicketAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.GetTicketAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.CancelTicket(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.CancelTicketAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.CancelTicketAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.CancelTicketExtended(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.CancelTicketExtendedAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.CancelTicketExtendedAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.GetTicketSimple(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.GetTicketSimpleAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.GetTicketSimpleAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.GetAcuse(System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.GetAcuseAsync(System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.GetAcuseAsync(System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:TimbradoRV.Service.Service.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:TimbradoRV.Service.Service.SchemaCfdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:TimbradoRV.Service.Service.TestCfdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:TimbradoRV.Service.Service.GetTicketCompleted">
+            <remarks/>
+        </member>
+        <member name="E:TimbradoRV.Service.Service.CancelTicketCompleted">
+            <remarks/>
+        </member>
+        <member name="E:TimbradoRV.Service.Service.CancelTicketExtendedCompleted">
+            <remarks/>
+        </member>
+        <member name="E:TimbradoRV.Service.Service.GetTicketSimpleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:TimbradoRV.Service.Service.GetAcuseCompleted">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.AuthSoapHd">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.AuthSoapHd.strUserName">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.AuthSoapHd.strPassword">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.AuthSoapHd.AnyAttr">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.StructAcuse">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructAcuse.state">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructAcuse.Descripcion">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructAcuse.Fecha">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructAcuse.Xml">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.StructCancelExtended">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancelExtended.RfcSolicitante">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancelExtended.Fecha">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancelExtended.UUIDs">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancelExtended.NoSerieFirmante">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancelExtended.Descripcion">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancelExtended.state">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancelExtended.Id">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.StructCancel">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancel.RfcSolicitante">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancel.Fecha">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancel.UUIDs">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancel.NoSerieFirmante">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancel.Descripcion">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCancel.state">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.StructCfd">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.RfcEmisor">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.RfcReceptor">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.Version">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.Serie">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.Folio">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.FechaExpedicion">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.MontoOperacion">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.MontoImpuesto">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.TipoComprobante">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.Cadena">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.Firma">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.SerieCertificado">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.Cfdi">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.Timbre">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.Descripcion">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.StructCfd.state">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.SchemaCfdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.SchemaCfdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.SchemaCfdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.TestCfdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.TestCfdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.TestCfdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.GetTicketCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.GetTicketCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.GetTicketCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.CancelTicketCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.CancelTicketCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.CancelTicketCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.CancelTicketExtendedCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.CancelTicketExtendedCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.CancelTicketExtendedCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.GetTicketSimpleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.GetTicketSimpleCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.GetTicketSimpleCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.GetAcuseCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:TimbradoRV.Service.GetAcuseCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:TimbradoRV.Service.GetAcuseCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+    </members>
+</doc>
