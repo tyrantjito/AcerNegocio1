@@ -127,10 +127,11 @@ public partial class ComparativoMora : System.Web.UI.Page
             morAct.BackgroundColor = new iTextSharp.text.BaseColor(10, 90, 160);
             encabezado.AddCell(morAct);
 
-            PdfPCell difer = new PdfPCell(new Phrase("DIFERENCIA", fuente5));
+            PdfPCell difer = new PdfPCell(new Phrase("DIFERENCIA", fuente7));
             difer.HorizontalAlignment = Element.ALIGN_CENTER;
             difer.Border = 3;
-            difer.BackgroundColor = new iTextSharp.text.BaseColor(223, 165, 165);
+            difer.BackgroundColor = new iTextSharp.text.BaseColor(10, 90, 160);
+            //difer.BackgroundColor = new iTextSharp.text.BaseColor(223, 165, 165);
             encabezado.AddCell(difer);
 
             PdfPCell morGrup = new PdfPCell(new Phrase("% MORA GRAL", fuente7));
@@ -147,7 +148,7 @@ public partial class ComparativoMora : System.Web.UI.Page
 
             documento.Add(encabezado);
 
-
+            /*
             PdfPTable llenaDat = new PdfPTable(10);
             llenaDat.DefaultCell.Border = 0;
             int[] llenaDatcellwidth = { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 };
@@ -513,7 +514,7 @@ public partial class ComparativoMora : System.Web.UI.Page
             totmoraSuc2.BackgroundColor = new iTextSharp.text.BaseColor(146, 163, 209);
             totalfi.AddCell(totmoraSuc2);
 
-            documento.Add(totalfi);
+            documento.Add(totalfi);*/
 
 
             documento.Close();

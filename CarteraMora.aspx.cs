@@ -141,7 +141,7 @@ public partial class CarteraMora : System.Web.UI.Page
             bordegr.AddCell(oneCell);
 
             documento.Add(bordegr);
-
+            /*
             PdfPTable datos = new PdfPTable(9);
             datos.DefaultCell.Border = 0;
             int[] datoscellwidth = { 11, 11, 11, 11, 11, 11, 11, 11, 12 };
@@ -197,7 +197,7 @@ public partial class CarteraMora : System.Web.UI.Page
             datos.AddCell(datTot);
 
             documento.Add(datos);
-
+            
 
             PdfPTable totales = new PdfPTable(9);
             totales.DefaultCell.Border = 0;
@@ -261,6 +261,7 @@ public partial class CarteraMora : System.Web.UI.Page
             totales.AddCell(totfin);
 
             documento.Add(totales);
+            */
 
             documento.Close();
 

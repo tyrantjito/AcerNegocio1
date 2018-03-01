@@ -173,13 +173,13 @@ public partial class PagosPactados : System.Web.UI.Page
             Sucur.BorderColor = new iTextSharp.text.BaseColor(144, 221, 238);
             Sucur.BackgroundColor = new iTextSharp.text.BaseColor(144, 221, 238);
             encabezado2.AddCell(Sucur);
-
+            
             PdfPCell Porcen2 = new PdfPCell(new Phrase("Porcentaje".ToUpper(), fuente6));
             Porcen2.HorizontalAlignment = Element.ALIGN_CENTER;
             Porcen2.BorderColor = new iTextSharp.text.BaseColor(144, 221, 238);
             Porcen2.BackgroundColor = new iTextSharp.text.BaseColor(144, 221, 238);
             encabezado2.AddCell(Porcen2);
-
+            /*
             PdfPCell suc1 = new PdfPCell(new Phrase("APATZINGAN", fuente6));
             suc1.HorizontalAlignment = Element.ALIGN_CENTER;
             encabezado2.AddCell(suc1);
@@ -443,11 +443,11 @@ public partial class PagosPactados : System.Web.UI.Page
             PdfPCell suc33AA = new PdfPCell(new Phrase(" ", fuente6));
             suc33AA.HorizontalAlignment = Element.ALIGN_CENTER;
             encabezado2.AddCell(suc33AA);
+            */
 
 
 
-
-
+            
             PdfPTable union = new PdfPTable(2);
             union.DefaultCell.Border = 0;
             int[] unioncellwidth = {80,20};
@@ -464,10 +464,10 @@ public partial class PagosPactados : System.Web.UI.Page
             tab2.HorizontalAlignment = Element.ALIGN_CENTER;
             tab2.Border = 0;
             union.AddCell(tab2);
-
+            
 
             documento.Add(union);
-
+            
 
             documento.Close();
 
