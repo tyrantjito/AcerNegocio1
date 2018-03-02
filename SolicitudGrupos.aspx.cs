@@ -791,82 +791,27 @@ public partial class SolicitudGrupos : System.Web.UI.Page
 
                             string cliente = r1[5].ToString();
                             string CicloDetalle = r1[6].ToString();
-
-
-
-
-
-
-
-
-
-
-
                             string Estatus = r1[8].ToString();
-                            if (Estatus == "ANT")
-                            {
-                                Estatus = "A";
-                            }
-                            else if (Estatus == "NUE")
-                            {
-                                Estatus = "N";
-                            }
-                            else if (Estatus == "DES")
-                            {
-                                Estatus = "D";
-                            }
-                            else if (Estatus == "REI")
-                            {
-                                Estatus = "R";
-                            }
-                            else
-                            {
-                                Estatus = "CG";
-                            }
+                            if (Estatus == "ANT")   Estatus = "A";
+                            else if (Estatus == "NUE")  Estatus = "N";
+                            else if (Estatus == "DES")  Estatus = "D";
+                            else if (Estatus == "REI")  Estatus = "R";
+                            else Estatus = "CG";
 
                             string CausasDese = r1[9].ToString();
-                            if (CausasDese == "MOR")
-                            {
-                                CausasDese = "M";
-                            }
-                            else if (CausasDese == "CON")
-                            {
-                                CausasDese = "C";
-                            }
-                            else if (CausasDese == "SOB")
-                            {
-                                CausasDese = "S";
-                            }
-                            else
-                            {
-                                CausasDese = "MF";
-                            }
+                            if (CausasDese == "MOR") CausasDese = "M";
+                            else if (CausasDese == "CON")   CausasDese = "C";
+                            else if (CausasDese == "SOB")   CausasDese = "S";
+                            else CausasDese = "MF";
 
                             string GiroNegocio = r1[10].ToString();
-                            if (GiroNegocio == "COM")
-                            {
-                                GiroNegocio = "C";
-                            }
-                            else if (GiroNegocio == "IND")
-                            {
-                                GiroNegocio = "I";
-                            }
-                            else if (GiroNegocio == "AGR")
-                            {
-                                GiroNegocio = "AP";
-                            }
-                            else if (GiroNegocio == "FOR")
-                            {
-                                GiroNegocio = "F";
-                            }
-                            else if (GiroNegocio == "PES")
-                            {
-                                GiroNegocio = "P";
-                            }
-                            else
-                            {
-                                GiroNegocio = "M";
-                            }
+                            if (GiroNegocio == "COM")   GiroNegocio = "C";
+                            else if (GiroNegocio == "IND")  GiroNegocio = "I";
+                            else if (GiroNegocio == "AGR")  GiroNegocio = "AP";
+                            else if (GiroNegocio == "FOR")  GiroNegocio = "F";
+                            else if (GiroNegocio == "PES")  GiroNegocio = "P";
+                            else GiroNegocio = "M";
+
                             decimal Ingreso = Convert.ToDecimal(r1[11]);
 
                             string DestinoCredito = r1[12].ToString();
@@ -877,47 +822,28 @@ public partial class SolicitudGrupos : System.Web.UI.Page
                             string Telefono = r1[17].ToString();
 
 
-                            if (numero == 1 | r1[7].ToString() == "PRE")
-                            {
+                            if (numero == 1 | r1[7].ToString() == "PRE"){
                                 if (r1[7].ToString() == "PRE")
-                                {
-                                    cliente = cliente + "\n PRESIDENTA";
-                                }
+                                    cliente = cliente + "\n PRESIDENTE";
                             }
-                            else if (numero == 2 | r1[7].ToString() == "SEC")
-                            {
+                            else if (numero == 2 | r1[7].ToString() == "SEC"){
                                 if (r1[7].ToString() == "SEC")
-                                {
-                                    cliente = cliente + "\n SUPERVISORA";
-                                }
+                                    cliente = cliente + "\n SUPERVISOR";
                             }
-                            else if (numero == 3 | r1[7].ToString() == "TES")
-                            {
+                            else if (numero == 3 | r1[7].ToString() == "TES"){
                                 if (r1[7].ToString() == "TES")
-                                {
-                                    cliente = cliente + "\n TESORERA";
-                                }
+                                    cliente = cliente + "\n TESORERO";
                             }
-
-                            else if (numero == 4 | r1[7].ToString() == "V1 ")
-                            {
+                            else if (numero == 4 | r1[7].ToString() == "V1 "){
                                 if (r1[7].ToString() == "V1 ")
-                                {
                                     cliente = cliente + "\n VOCAL1";
-                                }
                             }
-                            else if (numero == 5 | r1[7].ToString() == "V2 ")
-                            {
+                            else if (numero == 5 | r1[7].ToString() == "V2 "){
                                 if (r1[7].ToString() == "V2 ")
-                                {
                                     cliente = cliente + "\n VOCAL2";
-                                }
                             }
-                            else
-                            {
-
-                                if (r1[7].ToString() == "ZIN")
-                                {
+                            else {
+                                if (r1[7].ToString() == "ZIN"){
                                     nomCl = new PdfPCell(new Phrase(" " + cliente, fuente6));
                                     nomCl.HorizontalAlignment = Element.ALIGN_CENTER;
                                 }
